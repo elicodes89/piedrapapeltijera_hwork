@@ -1,25 +1,26 @@
 {% extends "bootstrap/base.html" %}
 
 {% block content %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <h1>Rock, Paper, Scissors Game</h1>
 
     <ul>
-        <li><a href="/rules">How to Play - Rules</a></li>
-        <li><a href="/rock/scissors">Click to Play</a></li>
+        <a href="/rules" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="false">Read the Rules</a>
+        <a href="/rock/scissors" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="false">Click to Play</a>
     </ul>
-
     <div>
-    <p>
-        <h3>Player 1 picked
+    <h4 class =  "reglas">
+        Player 1 picked
         {{ player1.choice }} <br>
         Player 2 picked
         {{ player2.choice }} <br>
-        And
+        🥁🥁🥁🥁
+        <br>
         {{ result }}
         🪅
-    </h3>
     
-    </p>
+    </h4>
     </div>
 
 {% endblock %}

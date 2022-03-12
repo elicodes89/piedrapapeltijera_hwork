@@ -1,0 +1,31 @@
+body {
+    background-color: #484656;
+}
+
+ul {
+    text-align: left;
+    margin: 30px
+
+
+}
+
+h1, h2, h3{
+    color: #c8bfff;
+    text-align: center;
+
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.reglas {
+    justify-content: center;
+    width: 40vw;
+    background-color: #ffae82;
+    padding: 20px;
+    margin: auto;
+    border: 10px solid #e0f7ff;
+    border-radius: 15px;
+
+}

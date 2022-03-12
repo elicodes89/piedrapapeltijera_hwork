@@ -1,12 +1,14 @@
 {% extends "bootstrap/base.html" %}
 <html>
     <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
     <title>{{ title }} - 🪨 🧻 ✂️ Let's Play </title>
     </head>
     <body>
         <ul>
-        <li><a href="/rules">How to Play - Rules</a></li>
-        <li><a href="/rock/scissors">Click to Play</a></li>
+            <a href="/rules" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="false">Read the Rules</a>
+            <a href="/rock/scissors" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="false">Click to Play</a>
         </ul>
         <hr>
         {% block content %}
