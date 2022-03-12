@@ -1,18 +1,29 @@
-{% extends "base.html" %}
+{% extends "bootstrap/base.html" %}
 
 {% block content %}
     <h1>Rock, Paper, Scissors Game</h1>
 
+    <ul>
+        <li><a href="/rules">How to Play - Rules</a></li>
+        <li><a href="/rock/scissors">Click to Play</a></li>
+    </ul>
+
     <div>
     <p>
-        Player 1 = 
+        <h3>Player 1 picked
         {{ player1.choice }} <br>
-        Player 2 = 
+        Player 2 picked
         {{ player2.choice }} <br>
-        And the winner is:
+        And
         {{ result }}
+        🪅
+    </h3>
     
     </p>
     </div>
 
 {% endblock %}
+
+<!-- Add a welcome page (and a route to get it) 
+    to explain the rules before the user picks their move. 
+Add a link to this in the base template. -->
