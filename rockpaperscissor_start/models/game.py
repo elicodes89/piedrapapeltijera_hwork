@@ -19,4 +19,4 @@ def lets_play(player1, player2):
         elif player1.choice == "paper" and player2.choice == "rock":
             return "Player 1 wins"
         elif player1.choice == player2.choice:
-            return "None"
+            return "Oops try again"
